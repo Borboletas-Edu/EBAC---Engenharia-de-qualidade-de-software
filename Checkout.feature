@@ -14,21 +14,21 @@
             Contexto:
             Dado que eu esteja na tela de checkout
 
-            Esquema do Cenário: Ausencia no preenchimento de campos obrigatorios
+            Esquema do Cenário: Validação de campos obrigatórios durante cadastro 
             Quando eu preencher os campos: <Nome>, <Sobrenome>, <Pais>, <Endereco>, <Cidade>, <CEP> e <Telefone>
             Então deve aparecer a seguinte mensagem: <mensagem>
 
             Exemplos:
             | Nome    | Sobrenome | País   | Endereço                | Cidade    | CEP      | Telefone      | Endereço de email        | mensagem                         |
             | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Cadastro realizado com sucesso!  |
-            |         | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Nome é obrigatorio!              |
-            | Eduardo |           | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Sobrenome é obrigatorio!         |
-            | Eduardo | Araujo    |        | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | País é obrigatorio!              |
-            | Eduardo | Araujo    | Brasil |                         | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Endereço é obrigatorio!          |
-            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 |           | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Cidade é obrigatoria!            |
-            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo |          | 012 345678911 | Eduardo.ebac@ebac.com.br | CEP é obrigatorio!               |
-            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 |               | Eduardo.ebac@ebac.com.br | Telefone é obrigatorio!          |
-            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 |                          | Endereço de email é obrigatorio! |
+            |         | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Nome é obrigatório!              |
+            | Eduardo |           | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Sobrenome é obrigatório!         |
+            | Eduardo | Araujo    |        | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | País é obrigatório!              |
+            | Eduardo | Araujo    | Brasil |                         | São Paulo | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Endereço é obrigatório!          |
+            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 |           | 05527890 | 012 345678911 | Eduardo.ebac@ebac.com.br | Cidade é obrigatória!            |
+            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo |          | 012 345678911 | Eduardo.ebac@ebac.com.br | CEP é obrigatório!               |
+            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 |               | Eduardo.ebac@ebac.com.br | Telefone é obrigatório!          |
+            | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 |                          | Endereço de email é obrigatório! |
 
 
 
