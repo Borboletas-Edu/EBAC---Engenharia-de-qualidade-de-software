@@ -15,9 +15,7 @@
             Dado que eu esteja na tela de checkout
 
             Esquema do Cenário: Ausencia no preenchimento de campos obrigatorios
-            Quando eu preencher campos com os seguintes dados:
-            | Nome   | Sobrenome   | País   | Endereço   | Cidade   | CEP   | Telefone   |
-            | <Nome> | <Sobrenome> | <País> | <Endereço> | <Cidade> | <CEP> | <Telefone> |
+            Quando eu preencher os campos: <Nome>, <Sobrenome>, <Pais>, <Endereco>, <Cidade>, <CEP> e <Telefone>
             Então deve aparecer a seguinte mensagem: <mensagem>
 
             Exemplos:
@@ -31,6 +29,9 @@
             | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo |          | 012 345678911 | Eduardo.ebac@ebac.com.br | CEP é obrigatorio!               |
             | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 |               | Eduardo.ebac@ebac.com.br | Telefone é obrigatorio!          |
             | Eduardo | Araujo    | Brasil | Rua da consolação, 1234 | São Paulo | 05527890 | 012 345678911 |                          | Endereço de email é obrigatorio! |
+
+
+
 
 
             Esquema do Cenário: formato de email inválido
